@@ -329,7 +329,7 @@ test('Pokemon deleted successfully.', async () => {
 	expect(await body.innerText()).toMatch('No Pokemon in the database! Please add one first.');
 });
 
-test('Unauthenticated Pokemon should have no update interface.', async () => {
+test('Unauthenticated Pokemon should have no delete interface.', async () => {
 	const pokemon = await generatePokemon();
 
 	await page.goto(Url.base());
